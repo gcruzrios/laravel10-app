@@ -13,7 +13,7 @@
           <a class="nav-link" href="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/blog">Blog</a>
+          <a class="nav-link" href="{{route('posts.index')}}">Blog</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/contacto">Contacto</a>
