@@ -77,7 +77,7 @@ class PostController extends Controller
     {
         
         
-        return view('posts.edit', ['post' => $post]);
+        return view('posts.delete', ['post' => $post]);
         //return ($post);
     }
 
@@ -111,6 +111,7 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
         $post->delete();
-        return 'Post eliminado';
+        //return 'Post eliminado';
+        return redirect()->route('posts.index');
     }
 }
