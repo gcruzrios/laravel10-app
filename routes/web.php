@@ -22,6 +22,8 @@ Route::get('/about', function () {
 });
 Route::get('/blog', [PostController::class, 'index']) -> name ('blog');
 
+Route::get('/blog/{id}', [PostController::class, 'show']);
+
 Route::get('/contacto', function () {
     return view('contacto');
 });
