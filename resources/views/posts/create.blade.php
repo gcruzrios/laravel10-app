@@ -4,7 +4,7 @@
 {{-- Esto es un comentario --}}
 <h1>Crear Post<h1>  
 
-@dump($errors->all())
+{{--@dump($errors->all())--}}
 
 <form action="{{ route('posts.store')}}" method="POST">
     @csrf
